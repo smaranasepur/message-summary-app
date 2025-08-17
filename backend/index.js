@@ -5,7 +5,11 @@ require('dotenv').config();
 const nodemailer = require('nodemailer');
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin:'https://message-summary-app.vercel.app/'
+  })
+);;
 app.use(express.json());
 
 // Route to generate AI summary
