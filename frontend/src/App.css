@@ -1,0 +1,83 @@
+/* full-page background + font */
+body {
+  background:#ebe9d1;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin:0;
+  padding:40px 0;
+  display:block;
+}
+
+
+/* app wrapper (centered card) */
+.card {
+  background:#ffffff;
+  width: 480px;
+  border-radius:8px;
+  padding: 25px 35px;
+  box-shadow:0 4px 14px rgba(0,0,0,0.12);
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+/* form labels */
+.card label{
+  font-size:15px;
+  font-weight:500;
+  color:#555;
+}
+
+/* input + textarea styling */
+.input {
+  width:100%;
+  padding:10px;
+  border:1px solid #ddd;
+  border-radius:4px;
+  font-size:14px;
+  resize:vertical;
+  background:#fafafa;
+}
+
+/* button styling */
+.btn {
+  padding:10px 15px;
+  background:#4778f2;
+  color:#fff;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
+  font-weight:500;
+  margin-top:5px;
+}
+.wrapper {
+  text-align:center;
+}
+
+.wrapper h1{
+  margin-bottom:25px;
+  color:#333;
+  font-size:28px;
+  font-weight:600;
+}
+textarea.input {
+  width:100%;
+  min-height:120px;
+  padding:10px;
+  border:1px solid #ddd;
+  border-radius:4px;
+  font-size:14px;
+  background:#fafafa;
+  resize:none;
+}
+
+textarea.input:focus {
+  outline:none;
+}
+
+/* auto-grow */
+/* auto-grow + allow scrollbar */
+textarea.input {
+  overflow-y: auto;      /* show vertical scrollbar when needed   */
+  overflow-x: hidden;    /* hide horizontal scrollbar (optional)  */
+}
+
