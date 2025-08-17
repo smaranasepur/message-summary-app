@@ -7,7 +7,7 @@ const nodemailer = require('nodemailer');
 const app = express();
 app.use(
   cors({
-    origin:'https://message-summary-app.vercel.app/'
+    origin:'https://message-summary-app.vercel.app'
   })
 );;
 app.use(express.json());
