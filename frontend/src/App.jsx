@@ -9,7 +9,7 @@ function App() {
   const [email, setEmail] = useState('');
 
   const generateSummary = async () => {
-    const res = await axios.post('http://localhost:5000/generate', {
+    const res = await axios.post('https://message-summary-backend.onrender.com/generate', {
       transcript,
       prompt,
     });
@@ -17,7 +17,7 @@ function App() {
   };
 
   const sendEmail = async () => {
-    await axios.post('http://localhost:5000/sendEmail', {
+    await axios.post('https://message-summary-backend.onrender.com/sendEmail', {
       email,
       summary,
     });
